@@ -14,3 +14,7 @@ Instalar los paquetes <br>
 ``` npm install ``` <br>
 Ejecutar la aplicacion 
 ``` npm run dev ```
+
+
+> [!NOTE]  
+> PD a ayudantes: si ven esto es para informar que solo hay commits de Ethan (yo) porque nadie de mi equipo ayudo :), a excepcion de Rodrigo Sanchez que tuvo una emergencia familiar, a el no lo funamos. 
