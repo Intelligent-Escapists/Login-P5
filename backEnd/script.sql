@@ -14,5 +14,6 @@ CREATE TABLE usuario (
     UNIQUE KEY correo (correo)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+-- La contraseña es 123456
+INSERT INTO usuario (correo,password) VALUES ('lolero12@gmail.com', '576438cfb04f7e49644ccb28c7a6d8215d874a92794a2c8b061724f8bfd031d3'); 
 SELECT * FROM usuario;
-DELETE FROM usuario WHERE id_usuario = 3;
