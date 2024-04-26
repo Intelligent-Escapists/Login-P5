@@ -3,7 +3,7 @@
 > [!NOTE]
 > En la carpeta backEnd esta un script.sql que contiene la creacion de la base de datos y el usuario funcional, es necesario correr el script de mysql para poder usar la aplicacion
 
-## Para correr el bacEnd 
+## Para correr el backEnd 
 
 Ejecutar el entorno virtual con <br>
 ```source venv/bin/activate``` <br>
