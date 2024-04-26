@@ -21,6 +21,7 @@ def crear_usuario():
     password_hashed = sha256(crypto.cipher(password)).hexdigest()
 
     nuevo_usuario = model.crear_usuario(correo, password_hashed)
+    session['id_usuario'] = nuevo_usuario.id_usuario
 
     return jsonify({
         "id_usuario": nuevo_usuario.id_usuario,
@@ -45,6 +46,11 @@ def login_usuario():
             "correo": usuario.correo,
             "password": usuario.password
         })
+@usuario_blueprint.route('/logout-usuario', methods=['POST'])
+def logout_usuario():
+    session.pop('id_usuario', None)
+    return "200"
+
 
 @usuario_blueprint.route('/@usuario')
 def get_usuario_autenticado():
